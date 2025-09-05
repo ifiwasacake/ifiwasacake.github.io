@@ -93,7 +93,7 @@ img:hover { transform: scale(1.05); }
 <body>
 
 <div class="card" id="quiz-card">
-  <p>nhớ viết thường, đủ dấu, đủ số nha</p>
+  <p>nhớ viết thường, đủ dấu, đủ số nha (maximum 4 từ)</p>
   <p id="question"></p>
   <input type="text" id="answerInput" placeholder="nhớ anh chíp em ly nói gì hông nè">
   <button id="checkBtn" onclick="checkAnswer()">check đi nè</button>
@@ -104,9 +104,7 @@ img:hover { transform: scale(1.05); }
 
 <!-- Nhạc nền -->
 <audio id="bg-music" autoplay loop>
-  <source src="https://raw.githubusercontent.com/ifiwasacake/ifiwasacake.github.io/main/anodt.mp3",
-"https://raw.githubusercontent.com/ifiwasacake/ifiwasacake.github.io/main/tt.mp3",
-"https://raw.githubusercontent.com/ifiwasacake/ifiwasacake.github.io/main/dcan.mp3">
+  <source src="https://raw.githubusercontent.com/ifiwasacake/ifiwasacake.github.io/main/anodt.mp3">
 </audio>
 
 <!-- Nút bật/tắt nhạc bằng PNG -->
@@ -127,8 +125,8 @@ if(visitCount >= maxVisits){
   document.getElementById('quiz-card').innerHTML = "<h2>ui, fibi của hôm nay hết mất rùi :<</h2><p>hẹn cả nhà vào ngày mai nha!</p>";
 } else {
   const questions = [
-    {question: "ảnh nhảy lầu luôn rồi, ảnh nhất định...", answer: "không tới với em"},
-    {question: "con thỏ tồi tệ, vô tâm,...", answer: "không có trái tim"},
+    {question: "ảnh nhảy lầu luôn rồi, ảnh nhất định ...", answer: "không tới với em"},
+    {question: "con thỏ tồi tệ, vô tâm, ...", answer: "không có trái tim"},
     {question: "Phúc năm nay là ... chưa?", answer: "30"},
     {question: "anh đã bị điếc rồi mà còn ... nữa", answer: "đeo khăn"},
     {question: "người ta hiểu theo kiểu ... với nhau thôi thì sẽ rất là vui", answer: "anh em bạn bè"},
@@ -225,3 +223,4 @@ window.onload = () => {
 
 </body>
 </html>
+
